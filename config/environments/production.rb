@@ -79,4 +79,8 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+
+  #reuiqred for Devise
+  config.action_mailer.default_url_options = { host: 'http://frozen-mesa-3922.herokuapp.com' }
+
 end
